@@ -5,13 +5,15 @@ import time
 
 def refresh():
     bpy.context.view_layer.update()
-    #bpy.ops.wm.redraw_timer(type='DRAW_WIN_SWAP', iterations=0.1)
+    
     
 
 pygame.init()
 joystick_count = pygame.joystick.get_count()
+
 if joystick_count == 0:
     print("No joysticks found.")
+    
 else:
     joystick = pygame.joystick.Joystick(0)
     joystick.init()
@@ -19,7 +21,7 @@ else:
 
 
 # set up variables
-counter=0
+
 x = 100
 y = 100
 joysticks = []
@@ -44,7 +46,6 @@ while run:
     if time.time() - current_time > 1/24:
         if record == True:
             obj.keyframe_insert(data_path="location",frame = bpy.context.scene.frame_current)
-            counter = 0
             bpy.context.scene.frame_set(bpy.context.scene.frame_current+1)
         current_time = time.time()
 
