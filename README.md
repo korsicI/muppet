@@ -25,6 +25,10 @@ Use the right analog stick to move Suzanne up and down.
 
 Press the circle button to start/stop recording keyframe.
 
+!!! Before start recording try moving Susanne whit the Joystick !!!
+
+!!! Only when she move press recording !!!
+
 Use the 'X' button to quit the script.
 
 If you encounter any issues and need to debug, launch Blender from the terminal.
