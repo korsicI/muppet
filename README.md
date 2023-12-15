@@ -1,5 +1,3 @@
-Installation Instructions for muppet.py in Blender
-
 Hello,
 
 First install the Pygame module in Blender, follow these steps:
